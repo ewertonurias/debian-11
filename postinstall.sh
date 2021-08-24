@@ -28,7 +28,7 @@ apt install lutris steam obs-studio jstest-gtk
 printf "\nEtapa 7/9: Instalando emuladores... \n"
 apt install pcsx2 retroarch
 
-### Baixa e instalar o pacote do Discord
+### Baixa e instala o pacote Discord
 printf "\nEtapa 8/9: Instalando o Discord... \n\n"
 wget -cO discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 apt install ./discord.deb
