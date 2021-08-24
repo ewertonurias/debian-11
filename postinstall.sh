@@ -38,5 +38,5 @@ printf "\nEtapa 9/9: Adicionando Repositório Flathub... \n\n"
 apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-### End of the script.
+### Fim do script.
 printf "\nFIM DO SCRIPT \n\n"
