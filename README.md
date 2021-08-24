@@ -8,7 +8,7 @@ Após logar no TTY, instalar o KDE Plasma Mínimal, com o comando `apt install k
 
 Após instalar o DE e reiniciar, o script `postinstall.sh` poderá ser executado.
 
-Por motivos de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntando.
+Por motivos de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntado.
 
 # Habilita suporte multi-arquitetura (i386)?
 Sim.
