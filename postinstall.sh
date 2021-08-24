@@ -16,7 +16,7 @@ apt install nvidia-driver
 printf "\nEtapa 4/8: Instalando Fontes TrueType Microsoft... \n\n"
 apt install ttf-mscorefonts-installer
 
-# Minha seleção de pacotes
+### Minha seleção de pacotes
 printf "\nEtapa 5/8: Instalando softwares diversos... \n\n"
 apt install k{ate,df,denlive,rita,colorchooser,get,calc} l{ibreoffice,ibreoffice-l10n-pt-br,ibreoffice-qt5,ibreoffice-kde5} i{nkscape,nxi} p{artitionmanager,7zip-full,7zip-rar} s{ynaptic,weeper} ark f{eh,irefox-esr,irefox-esr-l10n-pt-br} neofetch qbittorrent ristretto telegram-desktop vokoscreen-ng vlc youtube-dl
 
