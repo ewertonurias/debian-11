@@ -18,7 +18,7 @@ apt install ttf-mscorefonts-installer
 
 ### Minha seleção de pacotes
 printf "\nEtapa 5/9: Instalando softwares diversos... \n\n"
-apt install k{ate,df,denlive,rita,colorchooser,get,calc} l{ibreoffice,ibreoffice-l10n-pt-br,ibreoffice-qt5,ibreoffice-kde5} i{nkscape,nxi} p{artitionmanager,7zip-full,7zip-rar} s{ynaptic,weeper} f{eh,irefox-esr,irefox-esr-l10n-pt-br} ark neofetch qbittorrent ristretto telegram-desktop vokoscreen-ng vlc youtube-dl
+apt install ark f{eh,irefox-esr,irefox-esr-l10n-pt-br} i{nkscape,nxi} k{ate,calc,colorchooser,denlive,df,get,rita} l{ibreoffice,ibreoffice-l10n-pt-br,ibreoffice-qt5,ibreoffice-kde5} neofetch p{artitionmanager,7zip-full,7zip-rar} qbittorrent ristretto s{weeper,ynaptic} telegram-desktop vlc vokoscreen-ng youtube-dl
 
 ### Pacotes referentes a jogos
 printf "\nEtapa 6/9: Instalando pacotes de jogos... \n\n"
