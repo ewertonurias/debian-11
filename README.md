@@ -2,6 +2,12 @@
 
 Meu script pessoal de pós instalação focado em Debian 11 KDE Plasma (Netinst)
 
+Esta instalação deve ser feita com a ISO Netinst, e com nenhuma opção marcada no `Tasksel`.
+
+Após logar no TTY, instalar o KDE Plasma Mínimal, com o comando `apt install kde-plasma-desktop`.
+
+Após instalar o DE e reiniciar, o script `postinstall.sh` poderá ser executado.
+
 Por motivos de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntando.
 
 # Habilita suporte multi-arquitetura (i386)?
