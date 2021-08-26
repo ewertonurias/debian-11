@@ -4,10 +4,10 @@ Meu script pessoal de pós instalação focado em Debian 11 KDE Plasma (Netinst)
 
 1. Durante a instalação, deixe em branco a senha do root, assim seu usuário será adicionado automaticamente ao sudoers.
 2. Desmarque todas as opções do `Tasksel`.
-3. Após logar no TTY, instale o ambiente mínimo do KDE Plasma com o comando `sudo apt install kde-plasma-desktop`.
-4. Após instalar o DE e reiniciar, o script `postinstall.sh` poderá ser executado.
+3. Após logar no TTY, instale o git com o comando `sudo apt install git`.
+4. Inicie o script com `cd debian-11 && sudo chmod +x postinstall.sh && ./postinstall`.
 
-Por motivos de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntado.
+Por questões de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntado.
 
 # Habilita suporte multi-arquitetura (i386)?
 Sim.
