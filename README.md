@@ -2,7 +2,7 @@
 
 Meu script pessoal de pós instalação focado em Debian 11 KDE Plasma (Netinst)
 
-1. Durante a instalação, deixe em branco a senha do root, assim seu usuário será adicionado automaticamente ao sudoers.
+1. Durante a instalação, deixe a senha do root em branco, para que seu usuário seja adicionado automaticamente ao sudoers.
 2. Desmarque todas as opções do `Tasksel`.
 3. Após logar no TTY, inicie o script com este comando: `sudo apt install git && git clone https://github.com/ewertonurias/debian-11 && cd debian-11 && sudo chmod +x postinstall.sh && ./postinstall.sh`.
 
