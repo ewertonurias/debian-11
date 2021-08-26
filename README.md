@@ -4,8 +4,7 @@ Meu script pessoal de pós instalação focado em Debian 11 KDE Plasma (Netinst)
 
 1. Durante a instalação, deixe em branco a senha do root, assim seu usuário será adicionado automaticamente ao sudoers.
 2. Desmarque todas as opções do `Tasksel`.
-3. Após logar no TTY, instale o git com o comando `sudo apt install git`.
-4. Inicie o script com `git clone https://github.com/ewertonurias/debian-11 && cd debian-11 && sudo chmod +x postinstall.sh && ./postinstall.sh`.
+3. Após logar no TTY, inicie o script com este comando: `sudo apt install git && git clone https://github.com/ewertonurias/debian-11 && cd debian-11 && sudo chmod +x postinstall.sh && ./postinstall.sh`.
 
 Por questões de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntado.
 
