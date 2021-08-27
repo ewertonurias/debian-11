@@ -2,7 +2,7 @@
 
 ### Atualiza repositórios e pacotes
 printf "\nEtapa 1/10: Atualizando o sistema... \n\n"
-sudo apt update && apt upgrade
+sudo apt update && sudo apt upgrade
 
 ### Instala o ambiente mínimo do KDE Plasma
 printf "\nEtapa 2/10: Instalando o KDE Plasma mínimo... \n"
