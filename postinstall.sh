@@ -61,6 +61,7 @@ function emulators(){
 function discord(){
     ### Baixa e instala o pacote Discord
     printf "\nEtapa 9/10: Instalando o Discord... \n"
+    sudo apt install wget
     wget -cO discord.tar.gz "https://discord.com/api/download?platform=linux&format=tar.gz"
     sudo tar -xvzf discord.tar.gz -C /opt
     sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
