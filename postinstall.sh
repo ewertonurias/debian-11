@@ -97,17 +97,30 @@ function mscorefonts(){
 
 }
 
-sources_list
-multi_arch
-update_system
-kde_minimal
-nvidia_driver
-apps
-games
-emulators
-discord
-flatpak
-#mscorefonts
+
+if [[ "$1" == "exec" ]] && [[ $UID -eq 0 ]]; then
+    sources_list
+    multi_arch
+    update_system
+    kde_minimal
+    nvidia_driver
+    apps
+    games
+    emulators
+    discord
+    flatpak
+    #mscorefonts
+elif [[ $UID -eq 0 ]]; then
+    # Corrige o timeout do sudo.
+    # Se a conexão do usuário for lenta,
+    # o script demorará mais que o tempo permitido
+    # para a execução do SUDO. Para evitar o timeout,
+    # chamamos o script novamente mudando os poderes do sudo.
+    sudo su -c "$0 exec"
+else
+    printf 'Precisa ser root!\n'
+    exit 255
+fi
 
 ### Fim do script.
 printf "\nFIM DO SCRIPT \n\n"
