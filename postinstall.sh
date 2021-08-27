@@ -36,9 +36,10 @@ sudo apt install pcsx2 retroarch
 ### Baixa e instala o pacote Discord
 printf "\nEtapa 9/10: Instalando o Discord... \n"
 wget -cO discord.tar.gz "https://discord.com/api/download?platform=linux&format=tar.gz"
-sudo tar -xvzf discord.tar.gz -C /opt
-sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
-sudo cp -r /opt/Discord/discord.desktop /usr/share/applications
+sudo tar -xvzf discord.tar.gz -C /usr/share
+sudo cp /usr/share/Discord/discord.png /usr/share/pixmaps
+sudo ln -sf /usr/share/Discord/Discord /usr/bin/Discord
+sudo cp -r /usr/share/Discord/discord.desktop /usr/share/applications
 
 ### Instala o Flatpak e adiciona o repositório Flathub
 printf "\nEtapa 10/10: Adicionando Repositório Flathub... \n\n"
