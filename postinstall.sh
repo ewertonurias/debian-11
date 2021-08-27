@@ -8,6 +8,7 @@ cat /etc/apt/sources.list
 ### Habilita suporte multi-arquitetura
 printf "\nEtapa 2/10: Habilitando arquitetura i386... \n"
 sudo dpkg --add-architecture i386
+printf "\nFeito!\n"
 
 ### Atualiza repositórios e pacotes
 printf "\nEtapa 3/10: Atualizando o sistema... \n\n"
@@ -50,11 +51,13 @@ Type=Application
 Categories=Network;InstantMessaging;
 Path=/usr/bin
 ' > /usr/share/applications/discord.desktop
+printf "\nDiscord instalado com sucesso!\n"
 
 ### Instala o Flatpak e adiciona o repositório Flathub
 printf "\nEtapa 10/10: Adicionando Repositório Flathub... \n\n"
 sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+printf "\nFeito!\n\n"
 
 ### Fim do script.
 printf "\nFIM DO SCRIPT \n\n"
