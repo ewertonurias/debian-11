@@ -36,21 +36,25 @@ sudo apt install pcsx2 retroarch
 ### Baixa e instala o pacote Discord
 printf "\nEtapa 9/10: Instalando o Discord... \n"
 wget -cO discord.tar.gz "https://discord.com/api/download?platform=linux&format=tar.gz"
-sudo tar -xvzf discord.tar.gz -C /usr/share
-sudo mv /usr/share/Discord/ /usr/share/discord
-sudo cp /usr/share/discord/discord.png /usr/share/pixmaps
-sudo ln -sf /usr/share/discord/Discord /usr/bin/Discord
-sudo cp -r /usr/share/discord/discord.desktop /usr/share/applications
+sudo tar -xvzf discord.tar.gz -C /opt
+sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
+printf '
+[Desktop Entry]
+Name=Discord
+StartupWMClass=discord
+Comment=All-in-one voice and text chat for gamers that is free, secure, and works on both your desktop and phone.
+GenericName=Internet Messenger
+Exec=/usr/bin/Discord
+Icon=/opt/Discord/discord.png
+Type=Application
+Categories=Network;InstantMessaging;
+Path=/usr/bin
+' > /usr/share/applications/discord.desktop
 
 ### Instala o Flatpak e adiciona o repositório Flathub
 printf "\nEtapa 10/10: Adicionando Repositório Flathub... \n\n"
 sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-### Fontes TrueType da Microsoft
-### Para que isto seja executado, descomente as linhas abaixo.
-# printf "\nEtapa Extra: Instalando Fontes TrueType Microsoft... \n\n"
-# sudo apt install ttf-mscorefonts-installer
 
 ### Fim do script.
 printf "\nFIM DO SCRIPT \n\n"
