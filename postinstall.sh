@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function sources_list(){    
+function sources_list(){
     ### Habilita pacotes não-livre e de contribuintes
     printf "\nEtapa 1/10: Adicionando contrib non-free na sources.list... \n\n"
     sudo sed -i 's/main/main contrib non-free/' /etc/apt/sources.list
