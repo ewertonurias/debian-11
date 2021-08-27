@@ -90,7 +90,7 @@ function flatpak(){
 
 }
 
-function msfonts(){
+function mscorefonts(){
     ### Fontes TrueType da Microsoft
     printf "\nEtapa Opcional: Instalando Fontes TrueType Microsoft... \n\n"
     apt install ttf-mscorefonts-installer
@@ -107,7 +107,7 @@ games
 emulators
 discord
 flatpak
-#msfonts
+#mscorefonts
 
 ### Fim do script.
 printf "\nFIM DO SCRIPT \n\n"
