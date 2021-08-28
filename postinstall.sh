@@ -45,7 +45,7 @@ function nvidia_driver(){
 function apps(){
     ### Minha seleção de pacotes
     printf "\nEtapa 6/10: Instalando softwares diversos... \n\n"
-    install ark bash-completion f{eh,irefox-esr,irefox-esr-l10n-pt-br} i{nkscape,nxi} k{ate,calc,colorchooser,denlive,df,get,rita} l{ibreoffice,ibreoffice-l10n-pt-br,ibreoffice-qt5,ibreoffice-kde5} neofetch p{artitionmanager,lasma-browser-integration,7zip-full,7zip-rar} qbittorrent ristretto s{weeper,ynaptic} telegram-desktop vlc vokoscreen-ng wget youtube-dl
+    install ark bash-completion f{eh,irefox-esr{-l10n-pt-br}} i{nkscape,nxi} k{ate,calc,colorchooser,denlive,df,get,rita} libreoffice{-l10n-pt-br,-qt5,-kde5} neofetch p{artitionmanager,lasma-browser-integration,7zip-{full,rar}} qbittorrent ristretto s{weeper,ynaptic} telegram-desktop vlc vokoscreen-ng wget youtube-dl
 
 }
 
