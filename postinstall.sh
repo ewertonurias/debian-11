@@ -1,7 +1,8 @@
 #!/bin/bash
 
 function install(){
-    apt install -y    
+    apt install -y
+
 }
 
 function sources_list(){
