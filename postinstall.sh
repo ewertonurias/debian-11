@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function install(){
-    apt install -y
+    apt install -y $*
 
 }
 
