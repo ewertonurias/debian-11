@@ -12,7 +12,7 @@ function sources_list(){
     ### Habilita pacotes não-livre e de contribuintes
     print "Etapa 1/10: Adicionando contrib non-free na sources.list..."
     cp -v /etc/apt/sources.list{,.bkp}
-    sed -i 's/main/main contrib non-free/' /etc/apt/sources.list
+    sed -i 's/main$/main contrib non-free/' /etc/apt/sources.list
     cat /etc/apt/sources.list
 
 }
