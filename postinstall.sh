@@ -14,7 +14,6 @@ function sources_list(){
     cp -v /etc/apt/sources.list{,.bkp}
     sed -i 's/main$/main contrib non-free/' /etc/apt/sources.list
     cat /etc/apt/sources.list
-
 }
 
 function multi_arch(){
@@ -22,49 +21,42 @@ function multi_arch(){
     print "Etapa 2/10: Habilitando arquitetura i386..."
     dpkg --add-architecture i386
     print "Feito!"
-
 }
 
 function update_system(){
     ### Atualiza repositórios e pacotes
     print "Etapa 3/10: Atualizando o sistema..."
     apt update && apt upgrade
-
 }
 
 function kde_minimal(){
     ### Instala o ambiente mínimo do KDE Plasma
     print "Etapa 4/10: Instalando o KDE Plasma mínimo..."
     install kde-plasma-desktop
-
 }
 
 function nvidia_driver(){
     ### Driver proprietário NVIDIA
     print "Etapa 5/10: Instalando driver proprietário NVIDIA..."
     install nvidia-driver
-
 }
 
 function apps(){
     ### Minha seleção de pacotes
     print "Etapa 6/10: Instalando softwares diversos..."
     install ark bash-completion f{eh,irefox-esr{-l10n-pt-br}} i{nkscape,nxi} k{ate,calc,colorchooser,denlive,df,get,rita} libreoffice{-l10n-pt-br,-qt5,-kde5} neofetch p{artitionmanager,lasma-browser-integration,7zip-{full,rar}} qbittorrent ristretto s{weeper,ynaptic} telegram-desktop vlc vokoscreen-ng wget youtube-dl
-
 }
 
 function games(){
     ### Pacotes referentes a jogos
     print "Etapa 7/10: Instalando pacotes de jogos..."
     install lutris steam obs-studio jstest-gtk
-
 }
 
 function emulators(){
     ### Pacotes de emuladores
     print "Etapa 8/10: Instalando emuladores..."
     install pcsx2 retroarch
-
 }
 
 function discord(){
@@ -87,8 +79,7 @@ Type=Application
 Categories=Network;InstantMessaging;
 Path=/usr/bin
     " > /usr/share/applications/discord.desktop
-    print "Discord instalado com sucesso!"
-
+    print "Feito!"
 }
 
 function flatpak(){
@@ -97,16 +88,13 @@ function flatpak(){
     install flatpak
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     print "Feito!"
-
 }
 
 function mscorefonts(){
     ### Fontes TrueType da Microsoft
     print "Etapa Opcional: Instalando Fontes TrueType Microsoft..."
     install ttf-mscorefonts-installer
-
 }
-
 
 if [[ "$1" == "exec" ]] && [[ $UID -eq 0 ]]; then
     sources_list
