@@ -5,7 +5,7 @@ function install(){
 }
 
 function print(){
-    printf "\n$*\n\n"
+    printf "\n%b\n\n" "$*"
 }
 
 function sources_list(){
@@ -128,9 +128,9 @@ elif [[ $UID -eq 0 ]]; then
     # chamamos o script novamente mudando os poderes do sudo.
     sudo su -c "$0 exec"
 else
-    printf 'Precisa ser root!\n'
+    print 'Precisa ser root!'
     exit 255
 fi
 
 ### Fim do script.
-printf "\nFIM DO SCRIPT \n\n"
+print "FIM DO SCRIPT"
