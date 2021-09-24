@@ -44,7 +44,7 @@ function nvidia_driver(){
 function apps(){
     ### Minha seleção de pacotes
     print "Etapa 6/10: Instalando softwares diversos..."
-    install ark bash-completion f{eh,irefox-esr{-l10n-pt-br}} i{nkscape,nxi} k{ate,calc,colorchooser,denlive,df,get,rita} libreoffice{-l10n-pt-br,-qt5,-kde5} neofetch p{artitionmanager,lasma-browser-integration,7zip-{full,rar}} qbittorrent ristretto s{weeper,ynaptic} telegram-desktop vlc vokoscreen-ng wget youtube-dl
+    install ark bash-completion f{eh,irefox-esr{,-l10n-pt-br}} i{nkscape,nxi} k{ate,calc,colorchooser,denlive,df,get,rita} libreoffice{-l10n-pt-br,-qt5,-kde5} neofetch p{artitionmanager,lasma-browser-integration,7zip-{full,rar}} qbittorrent ristretto s{weeper,ynaptic} telegram-desktop vlc vokoscreen-ng wget youtube-dl
 }
 
 function games(){
@@ -65,7 +65,7 @@ function discord(){
     install wget
     wget -cO discord.tar.gz "https://discord.com/api/download?platform=linux&format=tar.gz"
     tar -xvzf discord.tar.gz -C /opt
-    ln -sf /opt/Discord/Discord /usr/bin/Discord
+    ln -sf /opt/Discord/Discord /usr/bin/discord
  
     printf "
 [Desktop Entry]
@@ -73,7 +73,7 @@ Name=Discord
 StartupWMClass=discord
 Comment=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
 GenericName=Internet Messenger
-Exec=/usr/bin/Discord
+Exec=/usr/bin/discord
 Icon=/opt/Discord/discord.png
 Type=Application
 Categories=Network;InstantMessaging;
